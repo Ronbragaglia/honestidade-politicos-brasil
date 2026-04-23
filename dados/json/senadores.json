@@ -1,0 +1,182 @@
+[
+  {
+    "nome": "Eduardo Girão",
+    "partido": "Novo",
+    "uf": "CE",
+    "score": 82,
+    "classificacao": "Excelente",
+    "presenca_pct": 96,
+    "processos": 0,
+    "pls": 47
+  },
+  {
+    "nome": "Sergio Moro",
+    "partido": "União",
+    "uf": "PR",
+    "score": 80,
+    "classificacao": "Excelente",
+    "presenca_pct": 94,
+    "processos": 0,
+    "pls": 52
+  },
+  {
+    "nome": "Eliziane Gama",
+    "partido": "PSD",
+    "uf": "MA",
+    "score": 78,
+    "classificacao": "Bom",
+    "presenca_pct": 93,
+    "processos": 0,
+    "pls": 38
+  },
+  {
+    "nome": "Soraya Thronicke",
+    "partido": "Podemos",
+    "uf": "MS",
+    "score": 75,
+    "classificacao": "Bom",
+    "presenca_pct": 91,
+    "processos": 0,
+    "pls": 41
+  },
+  {
+    "nome": "Randolfe Rodrigues",
+    "partido": "PT",
+    "uf": "AP",
+    "score": 72,
+    "classificacao": "Bom",
+    "presenca_pct": 89,
+    "processos": 0,
+    "pls": 62
+  },
+  {
+    "nome": "Simone Tebet",
+    "partido": "MDB",
+    "uf": "MS",
+    "score": 71,
+    "classificacao": "Bom",
+    "presenca_pct": 85,
+    "processos": 0,
+    "pls": 35
+  },
+  {
+    "nome": "Flávio Dino",
+    "partido": "PSB",
+    "uf": "MA",
+    "score": 70,
+    "classificacao": "Bom",
+    "presenca_pct": 88,
+    "processos": 1,
+    "pls": 28
+  },
+  {
+    "nome": "Omar Aziz",
+    "partido": "PSD",
+    "uf": "AM",
+    "score": 58,
+    "classificacao": "Regular",
+    "presenca_pct": 82,
+    "processos": 2,
+    "pls": 31
+  },
+  {
+    "nome": "Jaques Wagner",
+    "partido": "PT",
+    "uf": "BA",
+    "score": 56,
+    "classificacao": "Regular",
+    "presenca_pct": 80,
+    "processos": 1,
+    "pls": 22
+  },
+  {
+    "nome": "Rodrigo Pacheco",
+    "partido": "PSD",
+    "uf": "MG",
+    "score": 55,
+    "classificacao": "Regular",
+    "presenca_pct": 78,
+    "processos": 0,
+    "pls": 18
+  },
+  {
+    "nome": "Renan Calheiros",
+    "partido": "MDB",
+    "uf": "AL",
+    "score": 38,
+    "classificacao": "Ruim",
+    "presenca_pct": 71,
+    "processos": 7,
+    "pls": 15
+  },
+  {
+    "nome": "Fernando Collor",
+    "partido": "PTB",
+    "uf": "AL",
+    "score": 25,
+    "classificacao": "Ruim",
+    "presenca_pct": 62,
+    "processos": 3,
+    "pls": 8
+  },
+  {
+    "nome": "Flávio Bolsonaro",
+    "partido": "PL",
+    "uf": "RJ",
+    "score": 45,
+    "classificacao": "Regular",
+    "presenca_pct": 76,
+    "processos": 2,
+    "pls": 27
+  },
+  {
+    "nome": "Humberto Costa",
+    "partido": "PT",
+    "uf": "PE",
+    "score": 52,
+    "classificacao": "Regular",
+    "presenca_pct": 83,
+    "processos": 1,
+    "pls": 24
+  },
+  {
+    "nome": "Rogério Marinho",
+    "partido": "PL",
+    "uf": "RN",
+    "score": 54,
+    "classificacao": "Regular",
+    "presenca_pct": 84,
+    "processos": 0,
+    "pls": 33
+  },
+  {
+    "nome": "Marcos Rogério",
+    "partido": "PL",
+    "uf": "RO",
+    "score": 48,
+    "classificacao": "Regular",
+    "presenca_pct": 79,
+    "processos": 1,
+    "pls": 19
+  },
+  {
+    "nome": "Ciro Nogueira",
+    "partido": "PP",
+    "uf": "PI",
+    "score": 35,
+    "classificacao": "Ruim",
+    "presenca_pct": 68,
+    "processos": 4,
+    "pls": 12
+  },
+  {
+    "nome": "Davi Alcolumbre",
+    "partido": "União",
+    "uf": "AP",
+    "score": 42,
+    "classificacao": "Regular",
+    "presenca_pct": 72,
+    "processos": 2,
+    "pls": 16
+  }
+]

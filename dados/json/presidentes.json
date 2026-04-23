@@ -1,0 +1,38 @@
+[
+  {
+    "nome": "Lula (Luiz Inácio Lula da Silva)",
+    "periodo": "2023-atual",
+    "partido": "PT",
+    "score": 45,
+    "classificacao": "Regular",
+    "processos_resumo": "Condenado em 2a instancia (anulado por competencia)",
+    "patrimonio": "R$ 7,4M (2022)"
+  },
+  {
+    "nome": "Jair Bolsonaro",
+    "periodo": "2019-2022",
+    "partido": "PL",
+    "score": 32,
+    "classificacao": "Ruim",
+    "processos_resumo": "6 inqueritos STF, inelegivel ate 2030 (TSE)",
+    "patrimonio": "R$ 2,3M (2022)"
+  },
+  {
+    "nome": "Michel Temer",
+    "periodo": "2016-2018",
+    "partido": "MDB",
+    "score": 28,
+    "classificacao": "Ruim",
+    "processos_resumo": "Preso em 2019 (solto), 10+ processos",
+    "patrimonio": "R$ 1,6M (2014)"
+  },
+  {
+    "nome": "Dilma Rousseff",
+    "periodo": "2011-2016",
+    "partido": "PT",
+    "score": 48,
+    "classificacao": "Regular",
+    "processos_resumo": "Impeachment (pedaladas), sem condenacao criminal",
+    "patrimonio": "R$ 1,5M (2014)"
+  }
+]

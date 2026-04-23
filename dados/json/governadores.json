@@ -1,0 +1,245 @@
+[
+  {
+    "nome": "Eduardo Leite",
+    "partido": "PSDB",
+    "uf": "RS",
+    "score": 80,
+    "classificacao": "Excelente",
+    "processos": 0,
+    "reeleito": true
+  },
+  {
+    "nome": "Renato Casagrande",
+    "partido": "PSB",
+    "uf": "ES",
+    "score": 77,
+    "classificacao": "Bom",
+    "processos": 0,
+    "reeleito": true
+  },
+  {
+    "nome": "Raquel Lyra",
+    "partido": "PSDB",
+    "uf": "PE",
+    "score": 75,
+    "classificacao": "Bom",
+    "processos": 0,
+    "reeleito": false
+  },
+  {
+    "nome": "Elmano de Freitas",
+    "partido": "PT",
+    "uf": "CE",
+    "score": 72,
+    "classificacao": "Bom",
+    "processos": 0,
+    "reeleito": false
+  },
+  {
+    "nome": "Tarcísio de Freitas",
+    "partido": "Republicanos",
+    "uf": "SP",
+    "score": 71,
+    "classificacao": "Bom",
+    "processos": 0,
+    "reeleito": false
+  },
+  {
+    "nome": "Ratinho Junior",
+    "partido": "PSD",
+    "uf": "PR",
+    "score": 70,
+    "classificacao": "Bom",
+    "processos": 0,
+    "reeleito": true
+  },
+  {
+    "nome": "Ronaldo Caiado",
+    "partido": "União",
+    "uf": "GO",
+    "score": 69,
+    "classificacao": "Bom",
+    "processos": 1,
+    "reeleito": true
+  },
+  {
+    "nome": "Jorginho Mello",
+    "partido": "PL",
+    "uf": "SC",
+    "score": 67,
+    "classificacao": "Bom",
+    "processos": 0,
+    "reeleito": false
+  },
+  {
+    "nome": "Romeu Zema",
+    "partido": "Novo",
+    "uf": "MG",
+    "score": 66,
+    "classificacao": "Bom",
+    "processos": 0,
+    "reeleito": true
+  },
+  {
+    "nome": "Jerônimo Rodrigues",
+    "partido": "PT",
+    "uf": "BA",
+    "score": 64,
+    "classificacao": "Bom",
+    "processos": 0,
+    "reeleito": false
+  },
+  {
+    "nome": "Gladson Cameli",
+    "partido": "PP",
+    "uf": "AC",
+    "score": 58,
+    "classificacao": "Regular",
+    "processos": 2,
+    "reeleito": true
+  },
+  {
+    "nome": "Helder Barbalho",
+    "partido": "MDB",
+    "uf": "PA",
+    "score": 55,
+    "classificacao": "Regular",
+    "processos": 1,
+    "reeleito": true
+  },
+  {
+    "nome": "Cláudio Castro",
+    "partido": "PL",
+    "uf": "RJ",
+    "score": 48,
+    "classificacao": "Regular",
+    "processos": 3,
+    "reeleito": true
+  },
+  {
+    "nome": "Mauro Mendes",
+    "partido": "União",
+    "uf": "MT",
+    "score": 56,
+    "classificacao": "Regular",
+    "processos": 1,
+    "reeleito": true
+  },
+  {
+    "nome": "Wanderlei Barbosa",
+    "partido": "Republicanos",
+    "uf": "TO",
+    "score": 52,
+    "classificacao": "Regular",
+    "processos": 2,
+    "reeleito": true
+  },
+  {
+    "nome": "Paulo Dantas",
+    "partido": "MDB",
+    "uf": "AL",
+    "score": 45,
+    "classificacao": "Regular",
+    "processos": 2,
+    "reeleito": false
+  },
+  {
+    "nome": "Carlos Brandão",
+    "partido": "PSB",
+    "uf": "MA",
+    "score": 50,
+    "classificacao": "Regular",
+    "processos": 1,
+    "reeleito": true
+  },
+  {
+    "nome": "Fátima Bezerra",
+    "partido": "PT",
+    "uf": "RN",
+    "score": 63,
+    "classificacao": "Bom",
+    "processos": 0,
+    "reeleito": false
+  },
+  {
+    "nome": "Marcos Rocha",
+    "partido": "União",
+    "uf": "RO",
+    "score": 47,
+    "classificacao": "Regular",
+    "processos": 2,
+    "reeleito": true
+  },
+  {
+    "nome": "Clécio Vieira",
+    "partido": "Solidariedade",
+    "uf": "AP",
+    "score": 54,
+    "classificacao": "Regular",
+    "processos": 0,
+    "reeleito": false
+  },
+  {
+    "nome": "Antonio Denarium",
+    "partido": "PP",
+    "uf": "RR",
+    "score": 43,
+    "classificacao": "Regular",
+    "processos": 3,
+    "reeleito": true
+  },
+  {
+    "nome": "Wilson Lima",
+    "partido": "União",
+    "uf": "AM",
+    "score": 46,
+    "classificacao": "Regular",
+    "processos": 2,
+    "reeleito": true
+  },
+  {
+    "nome": "Ibaneis Rocha",
+    "partido": "MDB",
+    "uf": "DF",
+    "score": 44,
+    "classificacao": "Regular",
+    "processos": 2,
+    "reeleito": true
+  },
+  {
+    "nome": "João Azevêdo",
+    "partido": "PSB",
+    "uf": "PB",
+    "score": 62,
+    "classificacao": "Bom",
+    "processos": 0,
+    "reeleito": true
+  },
+  {
+    "nome": "Fábio Mitidieri",
+    "partido": "PSD",
+    "uf": "SE",
+    "score": 58,
+    "classificacao": "Regular",
+    "processos": 0,
+    "reeleito": false
+  },
+  {
+    "nome": "Eduardo Riedel",
+    "partido": "PSDB",
+    "uf": "MS",
+    "score": 68,
+    "classificacao": "Bom",
+    "processos": 0,
+    "reeleito": false
+  },
+  {
+    "nome": "Rafael Fonteles",
+    "partido": "PT",
+    "uf": "PI",
+    "score": 65,
+    "classificacao": "Bom",
+    "processos": 0,
+    "reeleito": false
+  }
+]

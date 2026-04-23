@@ -11,9 +11,26 @@
 
 <br/>
 
+[![Python](https://img.shields.io/badge/Python-3.8+-3776AB?style=flat-square&logo=python&logoColor=white)](scripts/)
+[![GitHub Actions](https://img.shields.io/github/actions/workflow/status/Ronbragaglia/honestidade-politicos-brasil/validar-dados.yml?style=flat-square&logo=githubactions&logoColor=white&label=CI)](https://github.com/Ronbragaglia/honestidade-politicos-brasil/actions)
+[![Last Commit](https://img.shields.io/github/last-commit/Ronbragaglia/honestidade-politicos-brasil?style=flat-square&color=009c3b)](https://github.com/Ronbragaglia/honestidade-politicos-brasil/commits)
+[![Repo Size](https://img.shields.io/github/repo-size/Ronbragaglia/honestidade-politicos-brasil?style=flat-square&color=ffdf00)](https://github.com/Ronbragaglia/honestidade-politicos-brasil)
+
+<br/>
+
 ### 🚨 Sem viés partidário. Sem opinião. Apenas dados públicos documentados.
 
-**18 senadores** · **20 deputados** · **27 governadores** · **4 presidentes** · **Atualizado Abr/2026**
+</div>
+
+<div align="center">
+
+```
+ ╔═══════════════════════════════════════════════════════════════════╗
+ ║  📊 69 políticos avaliados · 4 esferas · 15 partidos · 6 fontes ║
+ ║     Presidentes · Senadores · Deputados · Governadores           ║
+ ║     Atualizado Abril/2026                                        ║
+ ╚═══════════════════════════════════════════════════════════════════╝
+```
 
 </div>
 
@@ -21,33 +38,58 @@
 
 ## 🤔 Por que este projeto existe?
 
-> **71% dos brasileiros** não sabem o que seu deputado vota. **83%** não acompanham gastos da cota parlamentar. Este projeto muda isso.
+> **71% dos brasileiros** não sabem o que seu deputado vota.
+> **83%** não acompanham gastos da cota parlamentar.
+> **Este projeto muda isso.**
 
-Nós coletamos dados de **fontes 100% oficiais** (TSE, STF, Portal da Transparência, APIs da Câmara/Senado) e transformamos em informação acessível para qualquer cidadão.
+Nós coletamos dados de **fontes 100% oficiais** — TSE, STF, Portal da Transparência, APIs da Câmara e do Senado — e transformamos em informação acessível para qualquer cidadão.
+
+Cada político recebe um **score de 0 a 100**, calculado com critérios transparentes e verificáveis. Sem achismo. Sem filtro ideológico. Sem editorial.
 
 **Não somos de esquerda. Não somos de direita. Somos de dados.**
 
 ---
 
-## 📊 Score de Transparência — Como funciona?
-
-Cada político recebe um score de **0 a 100** baseado em critérios objetivos:
+## ⚙️ Como Funciona — Pipeline
 
 ```
-┌─────────────────────────────────────────────────────────┐
-│  SCORE = Ficha Limpa (25%) + Coerência (20%)            │
-│        + Presença (15%) + Patrimônio (15%)              │
-│        + Produtividade (15%) + Ética Recursos (10%)     │
-└─────────────────────────────────────────────────────────┘
+┌──────────────┐    ┌──────────────┐    ┌──────────────┐    ┌──────────────┐    ┌──────────────┐
+│    Fontes     │    │   Scripts    │    │    Dados     │    │    Score     │    │   Rankings   │
+│   Oficiais   │───▶│   Python     │───▶│    JSON/MD   │───▶│   0 — 100   │───▶│   Públicos   │
+│ TSE/Câmara/  │    │ Automatizado │    │ Estruturado  │    │ Transparente │    │  Por Esfera  │
+│  STF/Senado  │    │              │    │              │    │              │    │              │
+└──────────────┘    └──────────────┘    └──────────────┘    └──────────────┘    └──────────────┘
+```
+
+---
+
+## 📊 Score de Transparência
+
+Cada político recebe um score de **0 a 100** baseado em 6 critérios objetivos:
+
+```
+┌─────────────────────────────────────────────────────────────────┐
+│  SCORE = Ficha Limpa (25%) + Coerência (20%) + Presença (15%)  │
+│        + Patrimônio (15%) + Produtividade (15%) + Ética (10%)  │
+└─────────────────────────────────────────────────────────────────┘
+```
+
+**Exemplo visual** — como ler o score:
+
+```
+  0        20        40        60        80       100
+  ├─────────┼─────────┼─────────┼─────────┼─────────┤
+  ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓░░░░░░░░░░  Score: 78
+  🔴 Péssimo  🟠 Ruim  🟡 Regular  🔵 Bom  🟢 Excelente
 ```
 
 | Score | Classificação | Significado |
 |:---:|:---:|:---|
-| 🟢 80-100 | **Excelente** | Ficha limpa, presente, produtivo, transparente |
-| 🔵 60-79 | **Bom** | Atuação positiva com pontos de atenção |
-| 🟡 40-59 | **Regular** | Desempenho mediano, inconsistências |
-| 🟠 20-39 | **Ruim** | Problemas sérios documentados |
-| 🔴 0-19 | **Péssimo** | Condenações, ausências graves, falta total de transparência |
+| 🟢 80–100 | **Excelente** | Ficha limpa, presente, produtivo, transparente |
+| 🔵 60–79 | **Bom** | Atuação positiva com pontos de atenção |
+| 🟡 40–59 | **Regular** | Desempenho mediano, inconsistências |
+| 🟠 20–39 | **Ruim** | Problemas sérios documentados |
+| 🔴 0–19 | **Péssimo** | Condenações, ausências graves, falta total de transparência |
 
 👉 [Veja a metodologia completa →](metodologia/calculo-score.md)
 
@@ -62,7 +104,6 @@ Cada político recebe um score de **0 a 100** baseado em critérios objetivos:
 ### 👔 [Presidentes](dados/presidentes.md)
 Os 4 últimos presidentes com score de transparência, processos e patrimônio declarado.
 
-**Preview:**
 | Presidente | Score |
 |---|:---:|
 | Dilma Rousseff | 🟡 48 |
@@ -74,7 +115,7 @@ Os 4 últimos presidentes com score de transparência, processos e patrimônio d
 <td width="50%" valign="top">
 
 ### 🏛️ [Senadores](dados/senadores/_index.md)
-Ranking de 18 senadores com presença, processos e produtividade legislativa.
+18 senadores avaliados com presença, processos e produtividade legislativa.
 
 **Top 3:**
 | Senador | Score |
@@ -89,7 +130,7 @@ Ranking de 18 senadores com presença, processos e produtividade legislativa.
 <td width="50%" valign="top">
 
 ### 🏛️ [Deputados Federais](dados/deputados-federais/_index.md)
-Ranking de 20 deputados + análise por partido e gastos da cota parlamentar.
+20 deputados federais + análise por partido e gastos da cota parlamentar.
 
 **Top 3:**
 | Deputado | Score |
@@ -115,6 +156,8 @@ Todos os 27 governadores dos estados brasileiros com score e processos.
 </tr>
 </table>
 
+> 📈 **[Ver Dashboard completo com gráficos e estatísticas →](DASHBOARD.md)**
+
 ---
 
 ## 📡 Fontes Oficiais (100% dados públicos)
@@ -130,16 +173,78 @@ Todos os 27 governadores dos estados brasileiros com score e processos.
 
 ---
 
-## 🛠️ Scripts de Coleta Automatizada
+## 📁 Estrutura do Projeto
 
-```bash
-# Coletar dados de todos os deputados da legislatura atual
-python3 scripts/coleta-camara.py --legislatura 57 --output dados/deputados-federais/
-
-# Requer apenas: pip install requests
+```
+honestidade-politicos-brasil/
+├── dados/                          # Dados dos políticos
+│   ├── presidentes.md              #   4 presidentes recentes
+│   ├── senadores/                  #   18 senadores com ranking
+│   │   └── _index.md
+│   ├── deputados-federais/         #   20 deputados federais
+│   │   └── _index.md
+│   └── governadores/               #   27 governadores estaduais
+│       └── _index.md
+├── metodologia/                    # Metodologia documentada
+│   ├── calculo-score.md            #   Fórmula do score (pesos, critérios)
+│   └── fontes.md                   #   APIs e fontes utilizadas
+├── scripts/                        # Coleta automatizada
+│   ├── coleta-camara.py            #   Coletor da API da Câmara
+│   └── requirements.txt            #   Dependências Python
+├── .github/
+│   ├── workflows/                  #   CI/CD automatizado
+│   └── ISSUE_TEMPLATE/             #   Template para contestações
+│       └── contestacao.md
+├── DASHBOARD.md                    # Resumo visual com gráficos
+├── CONTRIBUTING.md                 # Guia de contribuição
+├── LICENSE                         # CC-BY-4.0
+└── README.md                       # Este arquivo
 ```
 
-👉 [Ver script completo →](scripts/coleta-camara.py)
+---
+
+## 💻 Acesso aos Dados
+
+Os dados estão disponíveis em Markdown estruturado. Você pode acessá-los diretamente ou processá-los programaticamente:
+
+```python
+# Exemplo: ler e processar dados do ranking
+import json, re
+from pathlib import Path
+
+# Parsear dados do markdown
+def extrair_scores(arquivo_md):
+    """Extrai nomes e scores de um arquivo de ranking."""
+    conteudo = Path(arquivo_md).read_text(encoding='utf-8')
+    # Regex para capturar linhas da tabela com score
+    padrao = r'\| .+? \| .+? \| .+? \| .+? \| [🟢🔵🟡🟠🔴] (\d+)'
+    return re.findall(padrao, conteudo)
+
+# Coletar dados frescos da API da Câmara
+# python3 scripts/coleta-camara.py --legislatura 57 --output dados/deputados-federais/
+```
+
+```bash
+# Coleta automatizada via CLI
+pip install requests
+python3 scripts/coleta-camara.py --legislatura 57 --limit 20
+
+# Output: fichas individuais em dados/deputados-federais/
+```
+
+---
+
+## 🤖 Automação (GitHub Actions)
+
+O projeto utiliza GitHub Actions para manter os dados atualizados e garantir qualidade:
+
+| Workflow | Frequência | O que faz |
+|:---:|:---:|:---|
+| Coleta Câmara | Semanal | Atualiza votações e despesas via API |
+| Validação de PR | A cada PR | Verifica se fontes oficiais estão linkadas |
+| Contestação | Manual | Template estruturado para políticos contestarem dados |
+
+Políticos ou assessorias podem contestar dados abrindo uma [Issue de Contestação](https://github.com/Ronbragaglia/honestidade-politicos-brasil/issues/new?template=contestacao.md) com evidências documentais.
 
 ---
 
@@ -157,19 +262,51 @@ python3 scripts/coleta-camara.py --legislatura 57 --output dados/deputados-feder
 
 ## 🤝 Como Contribuir
 
-| Perfil | Como ajudar |
-|:---:|:---|
-| 🔬 **Pesquisador** | Adicione dados com fontes verificáveis via PR |
-| 💻 **Desenvolvedor** | Melhore os scripts de coleta ou crie novos |
-| 📰 **Jornalista** | Use os dados livremente (CC-BY-4.0, só atribuir) |
-| 🗳️ **Cidadão** | Dê ⭐, compartilhe, abra Issues com sugestões |
+<table>
+<tr><th>Perfil</th><th>Como ajudar</th><th>Primeiros passos</th></tr>
+<tr>
+<td>🔬 <b>Pesquisador</b></td>
+<td>Adicione dados com fontes verificáveis</td>
+<td>
 
-### Regras
+1. Fork → 2. Crie arquivo em `dados/` → 3. Link fonte .gov.br → 4. PR
+</td>
+</tr>
+<tr>
+<td>💻 <b>Desenvolvedor</b></td>
+<td>Melhore scripts ou crie novos coletores</td>
+<td>
 
-- ✅ Todo dado DEVE ter fonte oficial linkada
-- ✅ Neutralidade jornalística absoluta
+1. Veja `scripts/` → 2. APIs em `metodologia/fontes.md` → 3. PR com testes
+</td>
+</tr>
+<tr>
+<td>📰 <b>Jornalista</b></td>
+<td>Use os dados livremente (CC-BY-4.0)</td>
+<td>
+
+Cite como: *"Dados: Honestidade Políticos BR (CC-BY-4.0)"*
+</td>
+</tr>
+<tr>
+<td>🗳️ <b>Cidadão</b></td>
+<td>Dê ⭐, compartilhe, abra Issues</td>
+<td>
+
+Encontrou erro? [Abra uma Issue](https://github.com/Ronbragaglia/honestidade-politicos-brasil/issues)
+</td>
+</tr>
+</table>
+
+### Regras para contribuições
+
+- ✅ Todo dado **DEVE** ter fonte oficial linkada (.gov.br / .jus.br)
+- ✅ Neutralidade jornalística absoluta — sem adjetivos, sem opinião
+- ✅ PRs passam por revisão de fontes antes do merge
 - ❌ Sem opinião pessoal ou linguagem pejorativa
 - ❌ Sem dados de fontes não-oficiais para scoring
+
+👉 [Guia completo de contribuição →](CONTRIBUTING.md)
 
 ---
 
@@ -177,7 +314,7 @@ python3 scripts/coleta-camara.py --legislatura 57 --output dados/deputados-feder
 
 > Se você acredita que **transparência fortalece a democracia**, dê uma ⭐ neste repositório.
 >
-> Cada estrela ajuda mais brasileiros a encontrarem este projeto e cobrarem seus representantes com dados.
+> Cada estrela ajuda mais brasileiros a encontrarem este projeto e cobrarem seus representantes **com dados, não com achismo**.
 
 ---
 

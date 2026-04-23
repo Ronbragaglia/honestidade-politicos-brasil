@@ -1,0 +1,222 @@
+[
+  {
+    "nome": "Tábata Amaral",
+    "partido": "PSB",
+    "uf": "SP",
+    "score": 85,
+    "classificacao": "Excelente",
+    "presenca_pct": 97,
+    "cota_mensal": 18200,
+    "pls": 42,
+    "processos": 0
+  },
+  {
+    "nome": "Adriana Ventura",
+    "partido": "Novo",
+    "uf": "SP",
+    "score": 83,
+    "classificacao": "Excelente",
+    "presenca_pct": 96,
+    "cota_mensal": 12400,
+    "pls": 38,
+    "processos": 0
+  },
+  {
+    "nome": "Marcel van Hattem",
+    "partido": "Novo",
+    "uf": "RS",
+    "score": 81,
+    "classificacao": "Excelente",
+    "presenca_pct": 95,
+    "cota_mensal": 15800,
+    "pls": 35,
+    "processos": 0
+  },
+  {
+    "nome": "Kim Kataguiri",
+    "partido": "União",
+    "uf": "SP",
+    "score": 78,
+    "classificacao": "Bom",
+    "presenca_pct": 93,
+    "cota_mensal": 19500,
+    "pls": 31,
+    "processos": 0
+  },
+  {
+    "nome": "Sâmia Bomfim",
+    "partido": "PSOL",
+    "uf": "SP",
+    "score": 76,
+    "classificacao": "Bom",
+    "presenca_pct": 94,
+    "cota_mensal": 16700,
+    "pls": 44,
+    "processos": 0
+  },
+  {
+    "nome": "Felipe Rigoni",
+    "partido": "União",
+    "uf": "ES",
+    "score": 75,
+    "classificacao": "Bom",
+    "presenca_pct": 92,
+    "cota_mensal": 14300,
+    "pls": 29,
+    "processos": 0
+  },
+  {
+    "nome": "Luisa Canziani",
+    "partido": "PSD",
+    "uf": "PR",
+    "score": 73,
+    "classificacao": "Bom",
+    "presenca_pct": 91,
+    "cota_mensal": 21000,
+    "pls": 26,
+    "processos": 0
+  },
+  {
+    "nome": "Nikolas Ferreira",
+    "partido": "PL",
+    "uf": "MG",
+    "score": 68,
+    "classificacao": "Bom",
+    "presenca_pct": 88,
+    "cota_mensal": 22500,
+    "pls": 18,
+    "processos": 0
+  },
+  {
+    "nome": "Guilherme Boulos",
+    "partido": "PSOL",
+    "uf": "SP",
+    "score": 66,
+    "classificacao": "Bom",
+    "presenca_pct": 85,
+    "cota_mensal": 17800,
+    "pls": 23,
+    "processos": 1
+  },
+  {
+    "nome": "Eduardo Bolsonaro",
+    "partido": "PL",
+    "uf": "SP",
+    "score": 52,
+    "classificacao": "Regular",
+    "presenca_pct": 78,
+    "cota_mensal": 28900,
+    "pls": 12,
+    "processos": 2
+  },
+  {
+    "nome": "André Janones",
+    "partido": "Avante",
+    "uf": "MG",
+    "score": 48,
+    "classificacao": "Regular",
+    "presenca_pct": 74,
+    "cota_mensal": 32100,
+    "pls": 15,
+    "processos": 1
+  },
+  {
+    "nome": "Arthur Lira",
+    "partido": "PP",
+    "uf": "AL",
+    "score": 42,
+    "classificacao": "Regular",
+    "presenca_pct": 72,
+    "cota_mensal": 35400,
+    "pls": 8,
+    "processos": 4
+  },
+  {
+    "nome": "Carla Zambelli",
+    "partido": "PL",
+    "uf": "SP",
+    "score": 45,
+    "classificacao": "Regular",
+    "presenca_pct": 76,
+    "cota_mensal": 26300,
+    "pls": 21,
+    "processos": 2
+  },
+  {
+    "nome": "Erika Hilton",
+    "partido": "PSOL",
+    "uf": "SP",
+    "score": 72,
+    "classificacao": "Bom",
+    "presenca_pct": 92,
+    "cota_mensal": 19200,
+    "pls": 33,
+    "processos": 0
+  },
+  {
+    "nome": "Delegado Waldir",
+    "partido": "União",
+    "uf": "GO",
+    "score": 50,
+    "classificacao": "Regular",
+    "presenca_pct": 79,
+    "cota_mensal": 29700,
+    "pls": 14,
+    "processos": 1
+  },
+  {
+    "nome": "Zeca Dirceu",
+    "partido": "PT",
+    "uf": "PR",
+    "score": 47,
+    "classificacao": "Regular",
+    "presenca_pct": 77,
+    "cota_mensal": 24600,
+    "pls": 11,
+    "processos": 1
+  },
+  {
+    "nome": "Hugo Motta",
+    "partido": "Republicanos",
+    "uf": "PB",
+    "score": 44,
+    "classificacao": "Regular",
+    "presenca_pct": 73,
+    "cota_mensal": 33200,
+    "pls": 9,
+    "processos": 2
+  },
+  {
+    "nome": "Valdemar Costa Neto",
+    "partido": "PL",
+    "uf": "SP",
+    "score": 28,
+    "classificacao": "Ruim",
+    "presenca_pct": 61,
+    "cota_mensal": 38500,
+    "pls": 4,
+    "processos": 5
+  },
+  {
+    "nome": "Chiquinho Brazão",
+    "partido": "União",
+    "uf": "RJ",
+    "score": 15,
+    "classificacao": "Péssimo",
+    "presenca_pct": 45,
+    "cota_mensal": 41200,
+    "pls": 3,
+    "processos": 3
+  },
+  {
+    "nome": "Daniel Silveira",
+    "partido": "PL",
+    "uf": "RJ",
+    "score": 12,
+    "classificacao": "Péssimo",
+    "presenca_pct": 0,
+    "cota_mensal": 0,
+    "pls": 0,
+    "processos": 1
+  }
+]

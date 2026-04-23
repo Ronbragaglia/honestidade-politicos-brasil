@@ -1,0 +1,38 @@
+name: "Coleta Semanal Automatizada"
+
+on:
+  schedule:
+    - cron: "0 3 * * 0"
+  workflow_dispatch:
+
+jobs:
+  coleta:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repositório
+        uses: actions/checkout@v4
+
+      - name: Configurar Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Instalar dependências
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r scripts/requirements.txt
+
+      - name: Executar scripts de coleta
+        run: python scripts/coleta-camara.py --limit 20
+
+      - name: Gerar dashboard
+        run: python scripts/gerar-dashboard.py
+
+      - name: Auto-commit se houver mudanças
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git diff --cached --quiet || git commit -m "chore: atualização automática semanal de dados"
+          git push
