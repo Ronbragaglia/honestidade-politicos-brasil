@@ -42,7 +42,7 @@
 > **83%** não acompanham gastos da cota parlamentar.
 > **Este projeto muda isso.**
 
-Nós coletamos dados de **fontes 100% oficiais** — TSE, STF, Portal da Transparência, APIs da Câmara e do Senado — e transformamos em informação acessível para qualquer cidadão.
+Nós coletamos dados de **fontes 100% oficiais**: TSE, STF, Portal da Transparência, APIs da Câmara e do Senado: e transformamos em informação acessível para qualquer cidadão.
 
 Cada político recebe um **score de 0 a 100**, calculado com critérios transparentes e verificáveis. Sem achismo. Sem filtro ideológico. Sem editorial.
 
@@ -50,12 +50,12 @@ Cada político recebe um **score de 0 a 100**, calculado com critérios transpar
 
 ---
 
-## ⚙️ Como Funciona — Pipeline
+## ⚙️ Como Funciona: Pipeline
 
 ```
 ┌──────────────┐    ┌──────────────┐    ┌──────────────┐    ┌──────────────┐    ┌──────────────┐
 │    Fontes     │    │   Scripts    │    │    Dados     │    │    Score     │    │   Rankings   │
-│   Oficiais   │───▶│   Python     │───▶│    JSON/MD   │───▶│   0 — 100   │───▶│   Públicos   │
+│   Oficiais   │───▶│   Python     │───▶│    JSON/MD   │───▶│   0 a 100   │───▶│   Públicos   │
 │ TSE/Câmara/  │    │ Automatizado │    │ Estruturado  │    │ Transparente │    │  Por Esfera  │
 │  STF/Senado  │    │              │    │              │    │              │    │              │
 └──────────────┘    └──────────────┘    └──────────────┘    └──────────────┘    └──────────────┘
@@ -74,7 +74,7 @@ Cada político recebe um score de **0 a 100** baseado em 6 critérios objetivos:
 └─────────────────────────────────────────────────────────────────┘
 ```
 
-**Exemplo visual** — como ler o score:
+**Exemplo visual**: como ler o score:
 
 ```
   0        20        40        60        80       100
@@ -252,7 +252,7 @@ Políticos ou assessorias podem contestar dados abrindo uma [Issue de Contestaç
 
 | Princípio | Como aplicamos |
 |:---:|:---|
-| 🏳️ **Apartidarismo** | Avaliamos PT, PL, MDB, PSOL, Novo — todos pela mesma régua |
+| 🏳️ **Apartidarismo** | Avaliamos PT, PL, MDB, PSOL, Novo: todos pela mesma régua |
 | 🔍 **Verificabilidade** | Todo dado tem link para fonte oficial (.gov.br / .jus.br) |
 | ⚖️ **Presunção de inocência** | Réu sem condenação em 2ª instância NÃO perde pontos |
 | 🗣️ **Direito de resposta** | Políticos podem abrir Issues contestando com evidências |
@@ -301,7 +301,7 @@ Encontrou erro? [Abra uma Issue](https://github.com/Ronbragaglia/honestidade-pol
 ### Regras para contribuições
 
 - ✅ Todo dado **DEVE** ter fonte oficial linkada (.gov.br / .jus.br)
-- ✅ Neutralidade jornalística absoluta — sem adjetivos, sem opinião
+- ✅ Neutralidade jornalística absoluta: sem adjetivos, sem opinião
 - ✅ PRs passam por revisão de fontes antes do merge
 - ❌ Sem opinião pessoal ou linguagem pejorativa
 - ❌ Sem dados de fontes não-oficiais para scoring
@@ -322,7 +322,7 @@ Encontrou erro? [Abra uma Issue](https://github.com/Ronbragaglia/honestidade-pol
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:ffdf00,50:009c3b,100:002776&height=100&section=footer&text=Dados%20públicos%2C%20para%20o%20público.&fontSize=16&fontColor=ffffff&fontAlignY=65" width="100%"/>
 
-> *"A transparência é o melhor desinfetante."* — Louis Brandeis
+> *"A transparência é o melhor desinfetante."*: Louis Brandeis
 
 **Mantido pela comunidade** · [Rone Bragaglia](https://github.com/Ronbragaglia) · **CC-BY-4.0**
 
