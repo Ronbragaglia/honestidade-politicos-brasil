@@ -2,37 +2,59 @@ name: "Coleta Semanal Automatizada"
 
 on:
   schedule:
-    - cron: "0 3 * * 0"
+    - cron: "0 3 * * 0" # Domingos 03:00 UTC
   workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: coleta-semanal
+  cancel-in-progress: false
 
 jobs:
   coleta:
     runs-on: ubuntu-latest
+    timeout-minutes: 30
+    permissions:
+      contents: write # commit dos dados atualizados
 
     steps:
-      - name: Checkout repositório
-        uses: actions/checkout@v4
+      - name: Harden runner
+        uses: step-security/harden-runner@0634a2670c59f64b4a01f0f96f84700a4088b9f0 # v2.12.0
+        with:
+          egress-policy: audit
 
-      - name: Configurar Python 3.11
-        uses: actions/setup-python@v5
+      - name: Checkout
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+
+      - name: Setup Python 3.11
+        uses: actions/setup-python@0b93645e9fea7318ecaed2b359559ac225c90a2b # v5.3.0
         with:
           python-version: "3.11"
+          cache: "pip"
+          cache-dependency-path: scripts/requirements.txt
 
-      - name: Instalar dependências
+      - name: Install deps
         run: |
           python -m pip install --upgrade pip
           pip install -r scripts/requirements.txt
 
-      - name: Executar scripts de coleta
+      - name: Run coleta-camara
         run: python scripts/coleta-camara.py --limit 20
 
-      - name: Gerar dashboard
+      - name: Run gerar-dashboard
         run: python scripts/gerar-dashboard.py
 
-      - name: Auto-commit se houver mudanças
+      - name: Commit changes (if any)
         run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
+          set -euo pipefail
+          if [ -z "$(git status --porcelain)" ]; then
+            echo "Sem mudancas nos dados."
+            exit 0
+          fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git add -A
-          git diff --cached --quiet || git commit -m "chore: atualização automática semanal de dados"
+          git commit -m "chore(data): atualizacao automatica semanal"
           git push
