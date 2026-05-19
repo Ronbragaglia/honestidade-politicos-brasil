@@ -1,281 +1,155 @@
-<div align="center">
+# Dashboard — Honestidade Politicos Brasil
 
-# 📊 DASHBOARD — Honestidade Políticos BR
-
-**Visão geral de todos os 69 políticos avaliados**
-
-`Última atualização: Abril 2026`
-
-</div>
+> Relatorio consolidado gerado automaticamente em 2026-05-19 19:46.
+> Dados coletados de APIs publicas (Camara dos Deputados, Senado Federal).
 
 ---
 
-## 📈 Resumo Geral
+## Estatisticas Gerais
+
+| Metrica | Valor |
+|---------|-------|
+| Total de politicos | 20 |
+| Score medio | 58.4/100 |
+| Maior score | 76/100 |
+| Menor score | 30/100 |
+| Mediana | 58/100 |
+
+### Por Esfera
+
+- **deputados-federais**: 20 politicos
+
+### Distribuicao por Classificacao
+
+| Classificacao | Qtd | Grafico |
+|---------------|-----|---------|
+| 🟢 Excelente (80-100) | 0 | ░░░░░░░░░░░░░░░░░░░░ |
+| 🔵 Bom (65-79) | 8 | ████████████████████ |
+| 🟡 Regular (45-64) | 8 | ████████████████████ |
+| 🟠 Ruim (25-44) | 4 | ██████████░░░░░░░░░░ |
+| 🔴 Pessimo (0-24) | 0 | ░░░░░░░░░░░░░░░░░░░░ |
+
+### Distribuicao de Scores (grafico)
 
 ```
-╔═══════════════════════════════════════════════════════════╗
-║                  NÚMEROS DO PROJETO                       ║
-╠═══════════════════════════════════════════════════════════╣
-║  Total avaliados    69 políticos                          ║
-║  Esferas            4  (Pres · Sen · Dep · Gov)           ║
-║  Partidos           15                                    ║
-║  Fontes oficiais    6  (TSE · Câmara · Senado · STF ·    ║
-║                         Transparência · CNJ)              ║
-║  Score médio geral  57.4                                  ║
-╚═══════════════════════════════════════════════════════════╝
+100 |
+ 90 |
+ 80 |
+ 70 | ████ (4)
+ 60 | █████ (5)
+ 50 | ██████ (6)
+ 40 | ████ (4)
+ 30 | █ (1)
+ 20 |
+ 10 |
+  0 |
+    +────────────────────────────────────────
+     Cada █ = 1 politico
 ```
+
 
 ---
 
-## 🏆 Top 5 Geral — Todas as Esferas
+## Top 10 — Melhores Scores
 
-```
-  #   Político                         Esfera        Partido     Score
- ─── ────────────────────────────────── ───────────── ─────────── ─────
-  1   Tábata Amaral (SP)               Dep. Federal  PSB          85 🟢
-  2   Adriana Ventura (SP)             Dep. Federal  Novo         83 🟢
-  3   Eduardo Girão (CE)               Senador       Novo         82 🟢
-  4   Marcel van Hattem (RS)           Dep. Federal  Novo         81 🟢
-  5   Eduardo Leite (RS)              Governador    PSDB         80 🟢
-      Sergio Moro (PR)                Senador       União        80 🟢
-```
+| # | Nome | Partido | UF | Esfera | Score | Class. |
+|---|------|---------|----|----|-------|--------|
+| 1 | Adail Filho | REPUBLICANOS | AM | deputados-federais | 🔵 76 | Bom |
+| 2 | Adail Filho | MDB | AM | deputados-federais | 🔵 76 | Bom |
+| 3 | Aécio Neves | PSDB | MG | deputados-federais | 🔵 76 | Bom |
+| 4 | Afonso Florence | PT | BA | deputados-federais | 🔵 76 | Bom |
+| 5 | Adilson Barroso | PL | SP | deputados-federais | 🔵 66 | Bom |
+| 6 | Adolfo Viana | PSDB | BA | deputados-federais | 🔵 66 | Bom |
+| 7 | Adriano do Baldy | PP | GO | deputados-federais | 🔵 66 | Bom |
+| 8 | AJ Albuquerque | PP | CE | deputados-federais | 🔵 66 | Bom |
+| 9 | Adriana Ventura | NOVO | SP | deputados-federais | 🟡 62 | Regular |
+| 10 | Acácio Favacho | MDB | AP | deputados-federais | 🟡 58 | Regular |
 
-## 🔻 Bottom 5 Geral — Todas as Esferas
+## Bottom 10 — Piores Scores
 
-```
-  #   Político                         Esfera        Partido     Score
- ─── ────────────────────────────────── ───────────── ─────────── ─────
- 65   Ciro Nogueira (PI)              Senador       PP           35 🟠
- 66   Bolsonaro                        Presidente    PL           32 🟠
- 67   Temer                            Presidente    MDB          28 🟠
-      Valdemar Costa Neto (SP)        Dep. Federal  PL           28 🟠
- 69   Fernando Collor (AL)            Senador       PTB          25 🟠
-      Chiquinho Brazão (RJ)           Dep. Federal  União        15 🔴
-      Daniel Silveira (RJ)            Dep. Federal  PL           12 🔴
-```
+| # | Nome | Partido | UF | Esfera | Score | Class. |
+|---|------|---------|----|----|-------|--------|
+| 1 | Aguinaldo Ribeiro | PP | PB | deputados-federais | 🟠 30 | Ruim |
+| 2 | Abilio Brunini | PL | MT | deputados-federais | 🟠 41 | Ruim |
+| 3 | Alberto Mourão | MDB | SP | deputados-federais | 🟠 41 | Ruim |
+| 4 | Afonso Motta | PDT | RS | deputados-federais | 🟠 44 | Ruim |
+| 5 | Alencar Santana | PT | SP | deputados-federais | 🟡 47 | Regular |
+| 6 | Albuquerque | REPUBLICANOS | RR | deputados-federais | 🟡 50 | Regular |
+| 7 | Alberto Fraga | PL | DF | deputados-federais | 🟡 52 | Regular |
+| 8 | Afonso Hamm | PP | RS | deputados-federais | 🟡 58 | Regular |
+| 9 | Airton Faleiro | PT | PA | deputados-federais | 🟡 58 | Regular |
+| 10 | Alceu Moreira | MDB | RS | deputados-federais | 🟡 58 | Regular |
 
----
-
-## 📊 Distribuição de Scores
-
-```
-  Faixa         Qtd    Distribuição
- ─────────────  ───    ─────────────────────────────────────────────────
-  🟢 80-100      7    ███████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░  10%
-  🔵 60-79      25    █████████████████████████░░░░░░░░░░░░░░░░░  36%
-  🟡 40-59      30    ██████████████████████████████░░░░░░░░░░░░  43%
-  🟠 20-39       5    █████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░   7%
-  🔴 0-19        2    ██░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░   3%
-```
-
-### Distribuição por Esfera
-
-```
-  Esfera              Média    Min    Max    Gráfico
- ──────────────────── ──────── ────── ────── ────────────────────────────────
-  Deputados Federais   57.3     12     85    ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓░░░░░░
-  Senadores            57.3     25     82    ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓░░░░░░
-  Governadores         60.4     43     80    ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓░░░░░
-  Presidentes          38.3     28     48    ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓░░░░░░░░░░░░░░
-```
 
 ---
 
-## 🏛️ Ranking por Esfera
+## Comparacao por Partido
 
-### 👔 Presidentes
+| Partido | Politicos | Score Medio | Melhor | Pior | Grafico |
+|---------|-----------|-------------|--------|------|--------|
+| PSDB | 2 | 🔵 71.0 | 76 | 66 | ██████████░░░░░ |
+| REPUBLICANOS | 2 | 🟡 63.0 | 76 | 50 | █████████░░░░░░ |
+| NOVO | 1 | 🟡 62.0 | 62 | 62 | █████████░░░░░░ |
+| PT | 3 | 🟡 60.3 | 76 | 47 | █████████░░░░░░ |
+| MDB | 4 | 🟡 58.2 | 76 | 41 | ████████░░░░░░░ |
+| PP | 4 | 🟡 55.0 | 66 | 30 | ████████░░░░░░░ |
+| PL | 3 | 🟡 53.0 | 66 | 41 | ███████░░░░░░░░ |
+| PDT | 1 | 🟠 44.0 | 44 | 44 | ██████░░░░░░░░░ |
 
-```
-  Dilma Rousseff     ████████████████████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░  48 🟡
-  Lula               ██████████████████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░  45 🟡
-  Bolsonaro          ████████████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░  32 🟠
-  Temer              ██████████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░  28 🟠
-```
-
-### 🏛️ Senadores — Top 10
-
-```
-  Eduardo Girão      █████████████████████████████████████████░░░░░░░░░░░░░  82 🟢
-  Sergio Moro        ████████████████████████████████████████░░░░░░░░░░░░░░  80 🟢
-  Eliziane Gama      ███████████████████████████████████████░░░░░░░░░░░░░░░  78 🔵
-  Soraya Thronicke   ████████████████████████████████████░░░░░░░░░░░░░░░░░░  75 🔵
-  Randolfe Rodrigues ████████████████████████████████████░░░░░░░░░░░░░░░░░░  72 🔵
-  Simone Tebet       ███████████████████████████████████░░░░░░░░░░░░░░░░░░░  71 🔵
-  Flávio Dino        ██████████████████████████████████░░░░░░░░░░░░░░░░░░░░  70 🔵
-  Omar Aziz          █████████████████████████████░░░░░░░░░░░░░░░░░░░░░░░░░  58 🟡
-  Jaques Wagner      ████████████████████████████░░░░░░░░░░░░░░░░░░░░░░░░░░  56 🟡
-  R. Pacheco         ███████████████████████████░░░░░░░░░░░░░░░░░░░░░░░░░░░  55 🟡
-```
-
-### 🏛️ Deputados Federais — Top 10
-
-```
-  Tábata Amaral      ██████████████████████████████████████████░░░░░░░░░░░░  85 🟢
-  Adriana Ventura    ████████████████████████████████████████░░░░░░░░░░░░░░  83 🟢
-  Marcel van Hattem  ████████████████████████████████████████░░░░░░░░░░░░░░  81 🟢
-  Kim Kataguiri      ██████████████████████████████████████░░░░░░░░░░░░░░░░  78 🔵
-  Sâmia Bomfim       █████████████████████████████████████░░░░░░░░░░░░░░░░░  76 🔵
-  Felipe Rigoni      ████████████████████████████████████░░░░░░░░░░░░░░░░░░  75 🔵
-  Luisa Canziani     ███████████████████████████████████░░░░░░░░░░░░░░░░░░░  73 🔵
-  Erika Hilton       ████████████████████████████████████░░░░░░░░░░░░░░░░░░  72 🔵
-  Nikolas Ferreira   █████████████████████████████████░░░░░░░░░░░░░░░░░░░░░  68 🔵
-  Guilherme Boulos   ████████████████████████████████░░░░░░░░░░░░░░░░░░░░░░  66 🔵
-```
-
-### 🗺️ Governadores — Top 10
-
-```
-  Eduardo Leite (RS) ████████████████████████████████████████░░░░░░░░░░░░░░  80 🟢
-  R. Casagrande (ES) █████████████████████████████████████░░░░░░░░░░░░░░░░░  77 🔵
-  Raquel Lyra (PE)   ████████████████████████████████████░░░░░░░░░░░░░░░░░░  75 🔵
-  Elmano Freitas(CE) ████████████████████████████████████░░░░░░░░░░░░░░░░░░  72 🔵
-  Tarcísio (SP)      ███████████████████████████████████░░░░░░░░░░░░░░░░░░░  71 🔵
-  Ratinho Jr. (PR)   ██████████████████████████████████░░░░░░░░░░░░░░░░░░░░  70 🔵
-  R. Caiado (GO)     █████████████████████████████████░░░░░░░░░░░░░░░░░░░░░  69 🔵
-  Eduardo Riedel(MS) █████████████████████████████████░░░░░░░░░░░░░░░░░░░░░  68 🔵
-  Jorginho Mello(SC) ████████████████████████████████░░░░░░░░░░░░░░░░░░░░░░  67 🔵
-  Romeu Zema (MG)    ████████████████████████████████░░░░░░░░░░░░░░░░░░░░░░  66 🔵
-```
 
 ---
 
-## 🏅 Ranking por Partido
+## Analise Regional
 
-Score médio dos políticos avaliados por partido (todas as esferas combinadas):
+| Regiao | Politicos | Score Medio | Melhor | Pior | Grafico |
+|--------|-----------|-------------|--------|------|--------|
+| Norte | 5 | 🟡 63.6 | 76 | 50 | █████████░░░░░░ |
+| Nordeste | 4 | 🟡 59.5 | 76 | 30 | ████████░░░░░░░ |
+| Centro-Oeste | 3 | 🟡 53.0 | 66 | 41 | ███████░░░░░░░░ |
+| Sudeste | 5 | 🟡 58.4 | 76 | 41 | ████████░░░░░░░ |
+| Sul | 3 | 🟡 53.3 | 58 | 44 | ████████░░░░░░░ |
 
-```
-  Partido             Avaliados   Score Médio   Gráfico
- ──────────────────── ─────────── ───────────── ──────────────────────────────────
-  PSDB                    3          74         ████████████████████████████████████░░░░
-  Novo                    4          78         ██████████████████████████████████████░░  ★
-  PSB                     5          72         ███████████████████████████████████░░░░░
-  Podemos                 1          75         ████████████████████████████████████░░░░
-  PSOL                    2          74         ████████████████████████████████████░░░░
-  PSD                     4          66         ████████████████████████████████░░░░░░░░
-  União Brasil            6          62         ██████████████████████████████░░░░░░░░░░
-  PT                      5          58         ████████████████████████████░░░░░░░░░░░░
-  Republicanos            2          62         ██████████████████████████████░░░░░░░░░░
-  PL                      6          42         ████████████████████░░░░░░░░░░░░░░░░░░░░
-  MDB                     4          46         ██████████████████████░░░░░░░░░░░░░░░░░░
-  PP                      3          42         ████████████████████░░░░░░░░░░░░░░░░░░░░
-  Avante                  1          48         ██████████████████████░░░░░░░░░░░░░░░░░░
-  Solidariedade           1          54         ██████████████████████████░░░░░░░░░░░░░░
-  PTB                     1          25         ████████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░
-```
+### Por Estado (UF)
 
-> ★ Novo lidera o score médio entre partidos com 2+ avaliados
+| UF | Politicos | Score Medio | Grafico |
+|----|-----------|-------------|--------|
+| AM | 2 | 🔵 76.0 | ███████████░░░░ |
+| MG | 1 | 🔵 76.0 | ███████████░░░░ |
+| BA | 2 | 🔵 71.0 | ██████████░░░░░ |
+| GO | 1 | 🔵 66.0 | █████████░░░░░░ |
+| CE | 1 | 🔵 66.0 | █████████░░░░░░ |
+| AP | 1 | 🟡 58.0 | ████████░░░░░░░ |
+| PA | 1 | 🟡 58.0 | ████████░░░░░░░ |
+| SP | 4 | 🟡 54.0 | ████████░░░░░░░ |
+| RS | 3 | 🟡 53.3 | ████████░░░░░░░ |
+| DF | 1 | 🟡 52.0 | ███████░░░░░░░░ |
+| RR | 1 | 🟡 50.0 | ███████░░░░░░░░ |
+| MT | 1 | 🟠 41.0 | ██████░░░░░░░░░ |
+| PB | 1 | 🟠 30.0 | ████░░░░░░░░░░░ |
 
----
-
-## 🗺️ Análise Regional (Governadores)
-
-```
-  Região           Score Médio   Melhor                      Pior
- ──────────────── ───────────── ─────────────────────────── ───────────────────
-  Sul                  72 🔵    Eduardo Leite (RS) 80       —
-  Sudeste              66 🔵    Renato Casagrande (ES) 77   Cláudio Castro (RJ) 48
-  Centro-Oeste         62 🔵    Ronaldo Caiado (GO) 69      Ibaneis Rocha (DF) 44
-  Nordeste             61 🔵    Raquel Lyra (PE) 75         Paulo Dantas (AL) 45
-  Norte                49 🟡    Gladson Cameli (AC) 58      Antonio Denarium (RR) 43
-```
-
-```
-  Sul          ████████████████████████████████████░░░░░░░░░░  72
-  Sudeste      ████████████████████████████████░░░░░░░░░░░░░░  66
-  Centro-Oeste ██████████████████████████████░░░░░░░░░░░░░░░░  62
-  Nordeste     █████████████████████████████░░░░░░░░░░░░░░░░░  61
-  Norte        ████████████████████████░░░░░░░░░░░░░░░░░░░░░░  49
-```
 
 ---
 
-## 💰 Cota Parlamentar — Extremos (Deputados)
+## Timeline de Atualizacoes
 
-```
-  MENORES GASTOS (média mensal)           MAIORES GASTOS (média mensal)
- ─────────────────────────────────────   ─────────────────────────────────────
-  Adriana Ventura (Novo-SP)   R$12.400    Chiquinho Brazão (União-RJ)  R$41.200
-  Felipe Rigoni (União-ES)    R$14.300    Valdemar C. Neto (PL-SP)    R$38.500
-  Marcel van Hattem (Novo-RS) R$15.800    Arthur Lira (PP-AL)          R$35.400
-```
+| Data | Esfera | Arquivo |
+|------|--------|--------|
+| ? | json | `dados/json/resumo.json` |
+| 2026-05-19 19:46:08 | deputados-federais | `dados/deputados-federais/resumo.json` |
 
-```
-  Adriana Ventura   ████████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░  R$ 12.400
-  Felipe Rigoni     ██████████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░  R$ 14.300
-  Marcel van Hattem ███████████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░  R$ 15.800
-  ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─
-  Hugo Motta        █████████████████████████████████░░░░░░░░░░░  R$ 33.200
-  Arthur Lira       ███████████████████████████████████░░░░░░░░░  R$ 35.400
-  Valdemar C. Neto  ██████████████████████████████████████░░░░░░  R$ 38.500
-  Chiquinho Brazão  ████████████████████████████████████████░░░░  R$ 41.200
-```
 
 ---
 
-## 📋 Produtividade Legislativa — Destaques
+## Metodologia
 
-### Deputados — Mais PLs apresentados
+Os scores sao calculados com base nos dados disponiveis via APIs publicas:
+- **Deputados Federais**: Presenca (35%) + Uso de Recursos (35%) + Produtividade (30%)
+- **Senadores**: Participacao em Votacoes (55%) + Autorias (45%)
 
-```
-  Sâmia Bomfim      ████████████████████████████████████████████░  44 PLs
-  Tábata Amaral      ██████████████████████████████████████████░░  42 PLs
-  Adriana Ventura    ████████████████████████████████████████░░░░  38 PLs
-  Marcel van Hattem  ███████████████████████████████████░░░░░░░░░  35 PLs
-  Kim Kataguiri      ██████████████████████████████░░░░░░░░░░░░░░  31 PLs
-```
-
-### Senadores — Mais PLs apresentados
-
-```
-  Randolfe Rodrigues █████████████████████████████████████████████████████████████░░  62 PLs
-  Sergio Moro        ████████████████████████████████████████████████████░░░░░░░░░░  52 PLs
-  Eduardo Girão      ███████████████████████████████████████████████░░░░░░░░░░░░░░░  47 PLs
-  Soraya Thronicke   █████████████████████████████████████████░░░░░░░░░░░░░░░░░░░░░  41 PLs
-  Eliziane Gama      ██████████████████████████████████████░░░░░░░░░░░░░░░░░░░░░░░░  38 PLs
-```
+Criterios adicionais (Ficha Limpa, Coerencia, Patrimonio) serao integrados
+quando fontes externas estiverem disponiveis. Veja [metodologia completa](metodologia/calculo-score.md).
 
 ---
 
-## ⚖️ Processos — Políticos com mais pendências
-
-```
-  Político                Processos   Situação
- ──────────────────────── ─────────── ─────────────────────────────────────
-  Renan Calheiros (MDB)        7     Inquéritos diversos
-  Valdemar C. Neto (PL)        5     Condenado (Mensalão)
-  Arthur Lira (PP)              4     Corrupção / lavagem
-  Ciro Nogueira (PP)            4     Lava Jato
-  Fernando Collor (PTB)         3     Condenado STF (peculato)
-  Cláudio Castro (PL)           3     Peculato, org. criminosa (réu)
-  Antonio Denarium (PP)         3     Improbidade administrativa
-  Chiquinho Brazão (União)      3     Réu — homicídio
-```
-
----
-
-## 📅 Linha do Tempo
-
-| Data | Evento |
-|:---:|:---|
-| Abr/2026 | Inclusão de 27 governadores com ranking completo |
-| Abr/2026 | Score de 18 senadores da 57ª legislatura |
-| Abr/2026 | Ranking de 20 deputados federais + análise por partido |
-| Abr/2026 | 4 presidentes recentes avaliados |
-| Abr/2026 | Dashboard e metodologia publicados |
-
----
-
-<div align="center">
-
-```
-╔════════════════════════════════════════════════════════════════╗
-║  Este dashboard é gerado a partir dos dados em dados/         ║
-║  Fonte: APIs oficiais do governo brasileiro                   ║
-║  Licença: CC-BY-4.0                                           ║
-║  Última atualização: Abril 2026                               ║
-╚════════════════════════════════════════════════════════════════╝
-```
-
-**[← Voltar ao README](README.md)** · **[Metodologia →](metodologia/calculo-score.md)** · **[Fontes →](metodologia/fontes.md)**
-
-</div>
+*Gerado por `scripts/gerar-dashboard.py` | Projeto [Honestidade Politicos Brasil](https://github.com/)*
+*Ultima atualizacao: 2026-05-19*
