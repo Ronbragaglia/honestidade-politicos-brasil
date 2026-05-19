@@ -174,11 +174,25 @@ class Validador:
             self.erro(str(filepath), "Erro de encoding (esperado UTF-8)")
             return
 
-        if not isinstance(data, dict):
-            self.erro(str(filepath), "JSON raiz deve ser um objeto/dict")
+        # Aceita tanto dict (resumo com metadata) quanto list (ranking direto).
+        if isinstance(data, list):
+            self.stats["politicos_encontrados"] += len(data)
+            for item in data:
+                if not isinstance(item, dict):
+                    continue
+                nome = item.get("nome", "?")
+                if "score_total" in item:
+                    self.validar_score(
+                        item["score_total"], str(filepath),
+                        contexto=f"(politico: {nome})"
+                    )
             return
 
-        # Verificar campos esperados
+        if not isinstance(data, dict):
+            self.erro(str(filepath), "JSON raiz deve ser objeto ou lista")
+            return
+
+        # Verificar campos esperados (apenas para dicts de resumo)
         if "data_coleta" not in data:
             self.aviso(str(filepath), "Campo 'data_coleta' ausente")
 
