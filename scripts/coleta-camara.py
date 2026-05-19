@@ -147,18 +147,18 @@ def get_despesas(deputado_id: int, ano: int | None = None) -> list[dict[str, Any
     return all_despesas
 
 
-def listar_votacoes_legislatura(ano_inicio: int) -> list[dict[str, Any]]:
-    """Lista todas as votacoes da Camara a partir do ano inicial (paginado)."""
+def listar_votacoes_legislatura(ano_inicio: int, limite: int = 100) -> list[dict[str, Any]]:
+    """Lista votacoes recentes da Camara a partir do ano inicial."""
     url = f"{BASE_URL}/votacoes"
     params: dict[str, Any] = {
         "dataInicio": f"{ano_inicio}-01-01",
         "ordem": "DESC",
         "ordenarPor": "dataHoraRegistro",
-        "itens": 200,
+        "itens": 100,
     }
     all_votacoes: list[dict[str, Any]] = []
     page = 1
-    while True:
+    while len(all_votacoes) < limite:
         params["pagina"] = page
         try:
             data = _get_json(url, params=params)["dados"]
@@ -170,38 +170,48 @@ def listar_votacoes_legislatura(ano_inicio: int) -> list[dict[str, Any]]:
         all_votacoes.extend(data)
         page += 1
         time.sleep(RATE_LIMIT_DELAY)
-        # Hard cap para evitar processamento infinito
-        if page > 10:
+        if page > 5:
             break
+    all_votacoes = all_votacoes[:limite]
     logger.info("Carregadas %s votacoes da legislatura.", len(all_votacoes))
     return all_votacoes
 
 
-def get_votos(id_votacao: str) -> list[dict[str, Any]]:
-    """Busca votos individuais de uma votacao com cache em memoria."""
-    if id_votacao in _VOTOS_CACHE:
-        return _VOTOS_CACHE[id_votacao]
+def prefetch_votos(votacoes: list[dict[str, Any]]) -> None:
+    """Pre-busca todos os votos individuais ANTES do loop de deputados.
 
-    url = f"{BASE_URL}/votacoes/{id_votacao}/votos"
-    try:
-        data = _get_json(url, params={"itens": 600})["dados"]
-    except requests.HTTPError as exc:
-        logger.warning("votos votacao=%s falhou: %s", id_votacao, exc)
-        data = []
-    _VOTOS_CACHE[id_votacao] = data
-    return data
+    Isso faz com que get_votos() vire O(1) in-memory durante o processing,
+    eliminando sleeps no hot path.
+    """
+    n = len(votacoes)
+    logger.info("Pre-buscando votos de %s votacoes...", n)
+    for i, votacao in enumerate(votacoes, start=1):
+        id_vot = str(votacao.get("id", ""))
+        if not id_vot or id_vot in _VOTOS_CACHE:
+            continue
+        url = f"{BASE_URL}/votacoes/{id_vot}/votos"
+        try:
+            data = _get_json(url, params={"itens": 600})["dados"]
+        except requests.HTTPError as exc:
+            logger.warning("votos votacao=%s falhou: %s", id_vot, exc)
+            data = []
+        _VOTOS_CACHE[id_vot] = data
+        if i % 20 == 0:
+            logger.info("  prefetch: %s/%s", i, n)
+        time.sleep(RATE_LIMIT_DELAY)
+    logger.info("Prefetch completo: %s votacoes em cache.", len(_VOTOS_CACHE))
 
 
 def get_votacoes_deputado(
     deputado_id: int, votacoes_legislatura: list[dict[str, Any]]
 ) -> list[dict[str, Any]]:
-    """Conta participacao do deputado nas votacoes da legislatura via cache de votos."""
+    """Conta participacao do deputado iterando puramente o cache (sem I/O)."""
     participacoes: list[dict[str, Any]] = []
     for votacao in votacoes_legislatura:
         id_vot = str(votacao.get("id", ""))
         if not id_vot:
             continue
-        votos = get_votos(id_vot)
+        votos = _VOTOS_CACHE.get(id_vot, [])
         for v in votos:
             dep_ref = v.get("deputado_") or v.get("deputado") or {}
             if dep_ref.get("id") == deputado_id:
@@ -211,7 +221,6 @@ def get_votacoes_deputado(
                     "data": votacao.get("dataHoraRegistro"),
                 })
                 break
-        time.sleep(RATE_LIMIT_DELAY / 4)  # mais leve, ja cacheado
     return participacoes
 
 
@@ -414,7 +423,8 @@ def main() -> int:
     logger.info("Encontrados: %s deputados (processando %s)", len(deputados), total)
 
     logger.info("Carregando votacoes da legislatura (cache global)...")
-    votacoes_legis = listar_votacoes_legislatura(ano_inicio=ano)
+    votacoes_legis = listar_votacoes_legislatura(ano_inicio=ano, limite=100)
+    prefetch_votos(votacoes_legis)
 
     resumo: list[dict[str, Any]] = []
     erros: list[dict[str, str]] = []
