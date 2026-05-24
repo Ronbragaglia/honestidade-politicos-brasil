@@ -17,8 +17,8 @@
 
 ## Presenca em Sessoes
 
-- **Sessoes registradas**: 2
-- **Presencas**: 2
+- **Sessoes registradas**: 3
+- **Presencas**: 3
 - **Percentual**: 100.0%
 - **Score presenca**: 100/100
 
@@ -42,4 +42,4 @@
 ---
 
 *Fonte: [API Camara dos Deputados](https://dadosabertos.camara.leg.br)*
-*Ultima coleta: 2026-05-19*
+*Ultima coleta: 2026-05-24*
