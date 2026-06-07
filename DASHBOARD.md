@@ -1,6 +1,6 @@
 # Dashboard — Honestidade Politicos Brasil
 
-> Relatorio consolidado gerado automaticamente em 2026-05-31 06:59.
+> Relatorio consolidado gerado automaticamente em 2026-06-07 07:06.
 > Dados coletados de APIs publicas (Camara dos Deputados, Senado Federal).
 
 ---
@@ -10,10 +10,10 @@
 | Metrica | Valor |
 |---------|-------|
 | Total de politicos | 20 |
-| Score medio | 52.0/100 |
+| Score medio | 50.9/100 |
 | Maior score | 76/100 |
-| Menor score | 41/100 |
-| Mediana | 54/100 |
+| Menor score | 24/100 |
+| Mediana | 58/100 |
 
 ### Por Esfera
 
@@ -24,10 +24,10 @@
 | Classificacao | Qtd | Grafico |
 |---------------|-----|---------|
 | 🟢 Excelente (80-100) | 0 | ░░░░░░░░░░░░░░░░░░░░ |
-| 🔵 Bom (65-79) | 2 | ███░░░░░░░░░░░░░░░░░ |
-| 🟡 Regular (45-64) | 11 | ████████████████████ |
-| 🟠 Ruim (25-44) | 7 | ████████████░░░░░░░░ |
-| 🔴 Pessimo (0-24) | 0 | ░░░░░░░░░░░░░░░░░░░░ |
+| 🔵 Bom (65-79) | 3 | ██████░░░░░░░░░░░░░░ |
+| 🟡 Regular (45-64) | 10 | ████████████████████ |
+| 🟠 Ruim (25-44) | 5 | ██████████░░░░░░░░░░ |
+| 🔴 Pessimo (0-24) | 2 | ████░░░░░░░░░░░░░░░░ |
 
 ### Distribuicao de Scores (grafico)
 
@@ -36,11 +36,11 @@
  90 |
  80 |
  70 | █ (1)
- 60 | █ (1)
- 50 | ███████████ (11)
- 40 | ███████ (7)
- 30 |
- 20 |
+ 60 | ███ (3)
+ 50 | ████████ (8)
+ 40 | ████ (4)
+ 30 | ██ (2)
+ 20 | ██ (2)
  10 |
   0 |
     +────────────────────────────────────────
@@ -55,30 +55,30 @@
 | # | Nome | Partido | UF | Esfera | Score | Class. |
 |---|------|---------|----|----|-------|--------|
 | 1 | Afonso Florence | PT | BA | deputados-federais | 🔵 76 | Bom |
-| 2 | AJ Albuquerque | PP | CE | deputados-federais | 🔵 66 | Bom |
-| 3 | Acácio Favacho | MDB | AP | deputados-federais | 🟡 58 | Regular |
-| 4 | Adolfo Viana | PSDB | BA | deputados-federais | 🟡 58 | Regular |
-| 5 | Aécio Neves | PSDB | MG | deputados-federais | 🟡 58 | Regular |
-| 6 | Aguinaldo Ribeiro | PP | PB | deputados-federais | 🟡 58 | Regular |
-| 7 | Adriana Ventura | NOVO | SP | deputados-federais | 🟡 56 | Regular |
-| 8 | Alberto Fraga | PL | DF | deputados-federais | 🟡 55 | Regular |
-| 9 | Adail Filho | REPUBLICANOS | AM | deputados-federais | 🟡 54 | Regular |
-| 10 | Adail Filho | MDB | AM | deputados-federais | 🟡 54 | Regular |
+| 2 | Adriano do Baldy | PP | GO | deputados-federais | 🔵 66 | Bom |
+| 3 | Aécio Neves | PSDB | MG | deputados-federais | 🔵 66 | Bom |
+| 4 | Adriana Ventura | NOVO | SP | deputados-federais | 🟡 64 | Regular |
+| 5 | Acácio Favacho | MDB | AP | deputados-federais | 🟡 58 | Regular |
+| 6 | Adail Filho | REPUBLICANOS | AM | deputados-federais | 🟡 58 | Regular |
+| 7 | Adail Filho | MDB | AM | deputados-federais | 🟡 58 | Regular |
+| 8 | Afonso Motta | PDT | RS | deputados-federais | 🟡 58 | Regular |
+| 9 | Airton Faleiro | PT | PA | deputados-federais | 🟡 58 | Regular |
+| 10 | Alencar Santana | PT | SP | deputados-federais | 🟡 58 | Regular |
 
 ## Bottom 10 — Piores Scores
 
 | # | Nome | Partido | UF | Esfera | Score | Class. |
 |---|------|---------|----|----|-------|--------|
-| 1 | Abilio Brunini | PL | MT | deputados-federais | 🟠 41 | Ruim |
-| 2 | Alberto Mourão | MDB | SP | deputados-federais | 🟠 41 | Ruim |
-| 3 | Alceu Moreira | MDB | RS | deputados-federais | 🟠 41 | Ruim |
-| 4 | Afonso Motta | PDT | RS | deputados-federais | 🟠 43 | Ruim |
-| 5 | Airton Faleiro | PT | PA | deputados-federais | 🟠 43 | Ruim |
-| 6 | Albuquerque | REPUBLICANOS | RR | deputados-federais | 🟠 44 | Ruim |
-| 7 | Alencar Santana | PT | SP | deputados-federais | 🟠 44 | Ruim |
-| 8 | Adilson Barroso | PL | SP | deputados-federais | 🟡 50 | Regular |
-| 9 | Adriano do Baldy | PP | GO | deputados-federais | 🟡 50 | Regular |
-| 10 | Afonso Hamm | PP | RS | deputados-federais | 🟡 50 | Regular |
+| 1 | Adolfo Viana | PSDB | BA | deputados-federais | 🔴 24 | Pessimo |
+| 2 | Aguinaldo Ribeiro | PP | PB | deputados-federais | 🔴 24 | Pessimo |
+| 3 | Albuquerque | REPUBLICANOS | RR | deputados-federais | 🟠 30 | Ruim |
+| 4 | Afonso Hamm | PP | RS | deputados-federais | 🟠 38 | Ruim |
+| 5 | Abilio Brunini | PL | MT | deputados-federais | 🟠 41 | Ruim |
+| 6 | Alberto Mourão | MDB | SP | deputados-federais | 🟠 41 | Ruim |
+| 7 | Adilson Barroso | PL | SP | deputados-federais | 🟠 44 | Ruim |
+| 8 | Alceu Moreira | MDB | RS | deputados-federais | 🟡 47 | Regular |
+| 9 | AJ Albuquerque | PP | CE | deputados-federais | 🟡 54 | Regular |
+| 10 | Alberto Fraga | PL | DF | deputados-federais | 🟡 54 | Regular |
 
 
 ---
@@ -87,14 +87,14 @@
 
 | Partido | Politicos | Score Medio | Melhor | Pior | Grafico |
 |---------|-----------|-------------|--------|------|--------|
-| PSDB | 2 | 🟡 58.0 | 58 | 58 | ████████░░░░░░░ |
-| PP | 4 | 🟡 56.0 | 66 | 50 | ████████░░░░░░░ |
-| NOVO | 1 | 🟡 56.0 | 56 | 56 | ████████░░░░░░░ |
-| PT | 3 | 🟡 54.3 | 76 | 43 | ████████░░░░░░░ |
-| REPUBLICANOS | 2 | 🟡 49.0 | 54 | 44 | ███████░░░░░░░░ |
-| PL | 3 | 🟡 48.7 | 55 | 41 | ███████░░░░░░░░ |
-| MDB | 4 | 🟡 48.5 | 58 | 41 | ███████░░░░░░░░ |
-| PDT | 1 | 🟠 43.0 | 43 | 43 | ██████░░░░░░░░░ |
+| PT | 3 | 🟡 64.0 | 76 | 58 | █████████░░░░░░ |
+| NOVO | 1 | 🟡 64.0 | 64 | 64 | █████████░░░░░░ |
+| PDT | 1 | 🟡 58.0 | 58 | 58 | ████████░░░░░░░ |
+| MDB | 4 | 🟡 51.0 | 58 | 41 | ███████░░░░░░░░ |
+| PL | 3 | 🟡 46.3 | 54 | 41 | ██████░░░░░░░░░ |
+| PP | 4 | 🟡 45.5 | 66 | 24 | ██████░░░░░░░░░ |
+| PSDB | 2 | 🟡 45.0 | 66 | 24 | ██████░░░░░░░░░ |
+| REPUBLICANOS | 2 | 🟠 44.0 | 58 | 30 | ██████░░░░░░░░░ |
 
 
 ---
@@ -103,29 +103,29 @@
 
 | Regiao | Politicos | Score Medio | Melhor | Pior | Grafico |
 |--------|-----------|-------------|--------|------|--------|
-| Norte | 5 | 🟡 50.6 | 58 | 43 | ███████░░░░░░░░ |
-| Nordeste | 4 | 🟡 64.5 | 76 | 58 | █████████░░░░░░ |
-| Centro-Oeste | 3 | 🟡 48.7 | 55 | 41 | ███████░░░░░░░░ |
-| Sudeste | 5 | 🟡 49.8 | 58 | 41 | ███████░░░░░░░░ |
-| Sul | 3 | 🟠 44.7 | 50 | 41 | ██████░░░░░░░░░ |
+| Norte | 5 | 🟡 52.4 | 58 | 30 | ███████░░░░░░░░ |
+| Nordeste | 4 | 🟠 44.5 | 76 | 24 | ██████░░░░░░░░░ |
+| Centro-Oeste | 3 | 🟡 53.7 | 66 | 41 | ████████░░░░░░░ |
+| Sudeste | 5 | 🟡 54.6 | 66 | 41 | ████████░░░░░░░ |
+| Sul | 3 | 🟡 47.7 | 58 | 38 | ███████░░░░░░░░ |
 
 ### Por Estado (UF)
 
 | UF | Politicos | Score Medio | Grafico |
 |----|-----------|-------------|--------|
-| BA | 2 | 🔵 67.0 | ██████████░░░░░ |
-| CE | 1 | 🔵 66.0 | █████████░░░░░░ |
+| GO | 1 | 🔵 66.0 | █████████░░░░░░ |
+| MG | 1 | 🔵 66.0 | █████████░░░░░░ |
 | AP | 1 | 🟡 58.0 | ████████░░░░░░░ |
-| MG | 1 | 🟡 58.0 | ████████░░░░░░░ |
-| PB | 1 | 🟡 58.0 | ████████░░░░░░░ |
-| DF | 1 | 🟡 55.0 | ████████░░░░░░░ |
-| AM | 2 | 🟡 54.0 | ████████░░░░░░░ |
-| GO | 1 | 🟡 50.0 | ███████░░░░░░░░ |
-| SP | 4 | 🟡 47.8 | ███████░░░░░░░░ |
-| RS | 3 | 🟠 44.7 | ██████░░░░░░░░░ |
-| RR | 1 | 🟠 44.0 | ██████░░░░░░░░░ |
-| PA | 1 | 🟠 43.0 | ██████░░░░░░░░░ |
+| AM | 2 | 🟡 58.0 | ████████░░░░░░░ |
+| PA | 1 | 🟡 58.0 | ████████░░░░░░░ |
+| CE | 1 | 🟡 54.0 | ████████░░░░░░░ |
+| DF | 1 | 🟡 54.0 | ████████░░░░░░░ |
+| SP | 4 | 🟡 51.8 | ███████░░░░░░░░ |
+| BA | 2 | 🟡 50.0 | ███████░░░░░░░░ |
+| RS | 3 | 🟡 47.7 | ███████░░░░░░░░ |
 | MT | 1 | 🟠 41.0 | ██████░░░░░░░░░ |
+| RR | 1 | 🟠 30.0 | ████░░░░░░░░░░░ |
+| PB | 1 | 🔴 24.0 | ███░░░░░░░░░░░░ |
 
 
 ---
@@ -135,7 +135,7 @@
 | Data | Esfera | Arquivo |
 |------|--------|--------|
 | ? | json | `dados/json/resumo.json` |
-| 2026-05-31 06:59:25 | deputados-federais | `dados/deputados-federais/resumo.json` |
+| 2026-06-07 07:06:37 | deputados-federais | `dados/deputados-federais/resumo.json` |
 
 
 ---
@@ -152,4 +152,4 @@ quando fontes externas estiverem disponiveis. Veja [metodologia completa](metodo
 ---
 
 *Gerado por `scripts/gerar-dashboard.py` | Projeto [Honestidade Politicos Brasil](https://github.com/)*
-*Ultima atualizacao: 2026-05-31*
+*Ultima atualizacao: 2026-06-07*
