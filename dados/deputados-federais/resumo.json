@@ -1,7 +1,7 @@
 {
   "legislatura": 57,
   "data_coleta": "2026-07-19 05:52:06",
-  "total_coletados": 20,
+  "total_coletados": 19,
   "erros": 0,
   "deputados": [
     {
@@ -17,7 +17,7 @@
       "total_gasto": 163740.67,
       "total_despesas": 156,
       "total_votacoes": 0,
-      "presenca_percentual": 100.0,
+      "presenca_percentual": 100,
       "arquivo_md": "afonso-florence.md",
       "data_coleta": "2026-07-19"
     },
@@ -34,7 +34,7 @@
       "total_gasto": 192481.06,
       "total_despesas": 141,
       "total_votacoes": 0,
-      "presenca_percentual": 100.0,
+      "presenca_percentual": 100,
       "arquivo_md": "aécio-neves.md",
       "data_coleta": "2026-07-19"
     },
@@ -68,7 +68,7 @@
       "total_gasto": 307306.8,
       "total_despesas": 122,
       "total_votacoes": 0,
-      "presenca_percentual": 100.0,
+      "presenca_percentual": 100,
       "arquivo_md": "acácio-favacho.md",
       "data_coleta": "2026-07-19"
     },
@@ -85,7 +85,7 @@
       "total_gasto": 244457.51,
       "total_despesas": 205,
       "total_votacoes": 0,
-      "presenca_percentual": 100.0,
+      "presenca_percentual": 100,
       "arquivo_md": "adilson-barroso.md",
       "data_coleta": "2026-07-19"
     },
@@ -102,7 +102,7 @@
       "total_gasto": 281459.38,
       "total_despesas": 129,
       "total_votacoes": 0,
-      "presenca_percentual": 100.0,
+      "presenca_percentual": 100,
       "arquivo_md": "adolfo-viana.md",
       "data_coleta": "2026-07-19"
     },
@@ -119,7 +119,7 @@
       "total_gasto": 304587.36,
       "total_despesas": 530,
       "total_votacoes": 0,
-      "presenca_percentual": 100.0,
+      "presenca_percentual": 100,
       "arquivo_md": "afonso-hamm.md",
       "data_coleta": "2026-07-19"
     },
@@ -136,7 +136,7 @@
       "total_gasto": 307055.57,
       "total_despesas": 434,
       "total_votacoes": 0,
-      "presenca_percentual": 100.0,
+      "presenca_percentual": 100,
       "arquivo_md": "afonso-motta.md",
       "data_coleta": "2026-07-19"
     },
@@ -153,7 +153,7 @@
       "total_gasto": 241447.61,
       "total_despesas": 139,
       "total_votacoes": 0,
-      "presenca_percentual": 100.0,
+      "presenca_percentual": 100,
       "arquivo_md": "aguinaldo-ribeiro.md",
       "data_coleta": "2026-07-19"
     },
@@ -170,7 +170,7 @@
       "total_gasto": 256200.06,
       "total_despesas": 197,
       "total_votacoes": 0,
-      "presenca_percentual": 100.0,
+      "presenca_percentual": 100,
       "arquivo_md": "airton-faleiro.md",
       "data_coleta": "2026-07-19"
     },
@@ -187,7 +187,7 @@
       "total_gasto": 176301.83,
       "total_despesas": 18,
       "total_votacoes": 0,
-      "presenca_percentual": 40.0,
+      "presenca_percentual": 40,
       "arquivo_md": "alberto-fraga.md",
       "data_coleta": "2026-07-19"
     },
@@ -204,7 +204,7 @@
       "total_gasto": 327795.67,
       "total_despesas": 622,
       "total_votacoes": 0,
-      "presenca_percentual": 75.0,
+      "presenca_percentual": 75,
       "arquivo_md": "alceu-moreira.md",
       "data_coleta": "2026-07-19"
     },
@@ -240,23 +240,6 @@
       "total_votacoes": 0,
       "presenca_percentual": 0,
       "arquivo_md": "alberto-mourão.md",
-      "data_coleta": "2026-07-19"
-    },
-    {
-      "id": 220714,
-      "nome": "Adail Filho",
-      "partido": "REPUBLICANOS",
-      "uf": "AM",
-      "score_total": 40,
-      "score_despesas": 30,
-      "score_presenca": 66,
-      "score_produtividade": 20,
-      "classificacao": "Ruim",
-      "total_gasto": 284218.54,
-      "total_despesas": 133,
-      "total_votacoes": 0,
-      "presenca_percentual": 66.7,
-      "arquivo_md": "adail-filho.md",
       "data_coleta": "2026-07-19"
     },
     {
@@ -306,7 +289,7 @@
       "total_gasto": 244462.35,
       "total_despesas": 209,
       "total_votacoes": 0,
-      "presenca_percentual": 50.0,
+      "presenca_percentual": 50,
       "arquivo_md": "adriano-do-baldy.md",
       "data_coleta": "2026-07-19"
     },
@@ -323,7 +306,7 @@
       "total_gasto": 279728.61,
       "total_despesas": 108,
       "total_votacoes": 0,
-      "presenca_percentual": 50.0,
+      "presenca_percentual": 50,
       "arquivo_md": "alencar-santana.md",
       "data_coleta": "2026-07-19"
     },
