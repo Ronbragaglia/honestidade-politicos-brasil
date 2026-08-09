@@ -11,16 +11,16 @@
 
 ## Cota Parlamentar
 
-- **Total gasto (periodo)**: R$ 176,301.83
-- **Despesas registradas**: 18
-- **Score despesas**: 70/100
+- **Total gasto (periodo)**: R$ 0.00
+- **Despesas registradas**: 0
+- **Score despesas**: 100/100
 
 ## Presenca em Sessoes
 
-- **Sessoes registradas**: 5
-- **Presencas**: 2
-- **Percentual**: 40.0%
-- **Score presenca**: 40/100
+- **Sessoes registradas**: 0
+- **Presencas**: 0
+- **Percentual**: 0%
+- **Score presenca**: 0/100
 
 ## Atividade Legislativa
 
@@ -31,10 +31,10 @@
 
 | Criterio | Score | Peso |
 |----------|-------|------|
-| Presenca | 40/100 | 35% |
-| Uso de Recursos | 70/100 | 35% |
+| Presenca | 0/100 | 35% |
+| Uso de Recursos | 100/100 | 35% |
 | Produtividade | 20/100 | 30% |
-| **TOTAL** | **🟠 44/100 - Ruim** | |
+| **TOTAL** | **🟠 41/100 - Ruim** | |
 
 > Nota: Criterios adicionais (Ficha Limpa, Coerencia, Patrimonio) serao integrados
 > quando fontes externas estiverem disponiveis.
@@ -42,4 +42,4 @@
 ---
 
 *Fonte: [API Camara dos Deputados](https://dadosabertos.camara.leg.br)*
-*Ultima coleta: 2026-07-19*
+*Ultima coleta: 2026-08-09*
