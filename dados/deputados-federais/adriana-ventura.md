@@ -17,10 +17,10 @@
 
 ## Presenca em Sessoes
 
-- **Sessoes registradas**: 6
-- **Presencas**: 4
-- **Percentual**: 66.7%
-- **Score presenca**: 66/100
+- **Sessoes registradas**: 0
+- **Presencas**: 0
+- **Percentual**: 0%
+- **Score presenca**: 0/100
 
 ## Atividade Legislativa
 
@@ -31,10 +31,10 @@
 
 | Criterio | Score | Peso |
 |----------|-------|------|
-| Presenca | 66/100 | 35% |
+| Presenca | 0/100 | 35% |
 | Uso de Recursos | 100/100 | 35% |
 | Produtividade | 20/100 | 30% |
-| **TOTAL** | **🟡 64/100 - Regular** | |
+| **TOTAL** | **🟠 41/100 - Ruim** | |
 
 > Nota: Criterios adicionais (Ficha Limpa, Coerencia, Patrimonio) serao integrados
 > quando fontes externas estiverem disponiveis.
@@ -42,4 +42,4 @@
 ---
 
 *Fonte: [API Camara dos Deputados](https://dadosabertos.camara.leg.br)*
-*Ultima coleta: 2026-09-06*
+*Ultima coleta: 2026-09-13*
