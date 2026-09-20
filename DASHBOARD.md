@@ -1,6 +1,6 @@
 # Dashboard — Honestidade Politicos Brasil
 
-> Relatorio consolidado gerado automaticamente em 2026-09-13 08:00.
+> Relatorio consolidado gerado automaticamente em 2026-09-20 08:18.
 > Dados coletados de APIs publicas (Camara dos Deputados, Senado Federal).
 
 ---
@@ -135,7 +135,7 @@
 | Data | Esfera | Arquivo |
 |------|--------|--------|
 | ? | json | `dados/json/resumo.json` |
-| 2026-09-13 08:00:56 | deputados-federais | `dados/deputados-federais/resumo.json` |
+| 2026-09-20 08:18:05 | deputados-federais | `dados/deputados-federais/resumo.json` |
 
 
 ---
@@ -152,4 +152,4 @@ quando fontes externas estiverem disponiveis. Veja [metodologia completa](metodo
 ---
 
 *Gerado por `scripts/gerar-dashboard.py` | Projeto [Honestidade Politicos Brasil](https://github.com/)*
-*Ultima atualizacao: 2026-09-13*
+*Ultima atualizacao: 2026-09-20*

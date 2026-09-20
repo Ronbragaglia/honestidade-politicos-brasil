@@ -1,6 +1,6 @@
 {
   "legislatura": 57,
-  "data_coleta": "2026-09-13 08:00:56",
+  "data_coleta": "2026-09-20 08:18:05",
   "total_coletados": 20,
   "erros": 0,
   "deputados": [
@@ -19,7 +19,7 @@
       "total_votacoes": 0,
       "presenca_percentual": 0,
       "arquivo_md": "abilio-brunini.md",
-      "data_coleta": "2026-09-13"
+      "data_coleta": "2026-09-20"
     },
     {
       "id": 204379,
@@ -36,7 +36,7 @@
       "total_votacoes": 0,
       "presenca_percentual": 0,
       "arquivo_md": "acácio-favacho.md",
-      "data_coleta": "2026-09-13"
+      "data_coleta": "2026-09-20"
     },
     {
       "id": 220714,
@@ -53,7 +53,7 @@
       "total_votacoes": 0,
       "presenca_percentual": 0,
       "arquivo_md": "adail-filho.md",
-      "data_coleta": "2026-09-13"
+      "data_coleta": "2026-09-20"
     },
     {
       "id": 220714,
@@ -70,7 +70,7 @@
       "total_votacoes": 0,
       "presenca_percentual": 0,
       "arquivo_md": "adail-filho.md",
-      "data_coleta": "2026-09-13"
+      "data_coleta": "2026-09-20"
     },
     {
       "id": 221328,
@@ -87,7 +87,7 @@
       "total_votacoes": 0,
       "presenca_percentual": 0,
       "arquivo_md": "adilson-barroso.md",
-      "data_coleta": "2026-09-13"
+      "data_coleta": "2026-09-20"
     },
     {
       "id": 204560,
@@ -104,7 +104,7 @@
       "total_votacoes": 0,
       "presenca_percentual": 0,
       "arquivo_md": "adolfo-viana.md",
-      "data_coleta": "2026-09-13"
+      "data_coleta": "2026-09-20"
     },
     {
       "id": 204528,
@@ -121,7 +121,7 @@
       "total_votacoes": 0,
       "presenca_percentual": 0,
       "arquivo_md": "adriana-ventura.md",
-      "data_coleta": "2026-09-13"
+      "data_coleta": "2026-09-20"
     },
     {
       "id": 121948,
@@ -138,7 +138,7 @@
       "total_votacoes": 0,
       "presenca_percentual": 0,
       "arquivo_md": "adriano-do-baldy.md",
-      "data_coleta": "2026-09-13"
+      "data_coleta": "2026-09-20"
     },
     {
       "id": 74646,
@@ -155,7 +155,7 @@
       "total_votacoes": 0,
       "presenca_percentual": 0,
       "arquivo_md": "aécio-neves.md",
-      "data_coleta": "2026-09-13"
+      "data_coleta": "2026-09-20"
     },
     {
       "id": 160508,
@@ -172,7 +172,7 @@
       "total_votacoes": 0,
       "presenca_percentual": 0,
       "arquivo_md": "afonso-florence.md",
-      "data_coleta": "2026-09-13"
+      "data_coleta": "2026-09-20"
     },
     {
       "id": 136811,
@@ -189,7 +189,7 @@
       "total_votacoes": 0,
       "presenca_percentual": 0,
       "arquivo_md": "afonso-hamm.md",
-      "data_coleta": "2026-09-13"
+      "data_coleta": "2026-09-20"
     },
     {
       "id": 178835,
@@ -206,7 +206,7 @@
       "total_votacoes": 0,
       "presenca_percentual": 0,
       "arquivo_md": "afonso-motta.md",
-      "data_coleta": "2026-09-13"
+      "data_coleta": "2026-09-20"
     },
     {
       "id": 160527,
@@ -223,7 +223,7 @@
       "total_votacoes": 0,
       "presenca_percentual": 0,
       "arquivo_md": "aguinaldo-ribeiro.md",
-      "data_coleta": "2026-09-13"
+      "data_coleta": "2026-09-20"
     },
     {
       "id": 204495,
@@ -240,7 +240,7 @@
       "total_votacoes": 0,
       "presenca_percentual": 0,
       "arquivo_md": "airton-faleiro.md",
-      "data_coleta": "2026-09-13"
+      "data_coleta": "2026-09-20"
     },
     {
       "id": 204549,
@@ -257,7 +257,7 @@
       "total_votacoes": 0,
       "presenca_percentual": 0,
       "arquivo_md": "aj-albuquerque.md",
-      "data_coleta": "2026-09-13"
+      "data_coleta": "2026-09-20"
     },
     {
       "id": 73579,
@@ -274,7 +274,7 @@
       "total_votacoes": 0,
       "presenca_percentual": 0,
       "arquivo_md": "alberto-fraga.md",
-      "data_coleta": "2026-09-13"
+      "data_coleta": "2026-09-20"
     },
     {
       "id": 74696,
@@ -291,7 +291,7 @@
       "total_votacoes": 0,
       "presenca_percentual": 0,
       "arquivo_md": "alberto-mourão.md",
-      "data_coleta": "2026-09-13"
+      "data_coleta": "2026-09-20"
     },
     {
       "id": 220538,
@@ -308,7 +308,7 @@
       "total_votacoes": 0,
       "presenca_percentual": 0,
       "arquivo_md": "albuquerque.md",
-      "data_coleta": "2026-09-13"
+      "data_coleta": "2026-09-20"
     },
     {
       "id": 160559,
@@ -325,7 +325,7 @@
       "total_votacoes": 0,
       "presenca_percentual": 0,
       "arquivo_md": "alceu-moreira.md",
-      "data_coleta": "2026-09-13"
+      "data_coleta": "2026-09-20"
     },
     {
       "id": 204501,
@@ -342,7 +342,7 @@
       "total_votacoes": 0,
       "presenca_percentual": 0,
       "arquivo_md": "alencar-santana.md",
-      "data_coleta": "2026-09-13"
+      "data_coleta": "2026-09-20"
     }
   ]
 }
